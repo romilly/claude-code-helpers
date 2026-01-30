@@ -2,11 +2,12 @@
 
 Commands, Skills and other tools for augmenting Python development with Claude Code.
 
-It's opinionated. I follow much of the process described in [GOOS](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627), but I have adapted the ideas for use with Python.
-
-I use TDD, Ports and adapters, and Alistair Cockburn's use cases.
-
 This is under rapid development, but I hope you'll find it useful as it is now.
+
+It's opinionated. I follow much of the process described in [GOOS](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627), but I have adapted the ideas for use with Python. I use TDD, Ports and adapters, and Alistair Cockburn's use cases.
+
+It also contains material from Paul Hammond's [dotfiles project](https://github.com/citypaul/.dotfiles) and from [HTTP4py](https://www.http4py.org/). 
+
 
 I use it in conjunction with a meta-project that creates new projects. I plan to make that public Real Soon Now(tm).
 

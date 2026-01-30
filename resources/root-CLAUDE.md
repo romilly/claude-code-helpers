@@ -28,11 +28,9 @@ We're colleagues working together. Be direct and honest:
 
 1. **Red**: Write a failing test for new functionality
 2. **Green**: Write minimal code to make the test pass
-3. **Commit**: Commit the passing test and implementation
-4. **Refactor** (if needed): Improve test or code while keeping tests green
-5. **Retest**: Ensure all tests still pass after refactoring
-6. **Commit**: Commit the refactored code
-7. **Repeat**: Go back to step 4 for further refactoring or step 1 for next feature
+3. **Refactor** Discuss with user how to improve test or code while keeping tests green
+4. **Commit**: Commit the passing test and implementation
+5. **Repeat**: Go back to step 3 for further refactoring or push and go to step 1 for next feature
 
 ### TDD Guidelines
 
@@ -59,11 +57,18 @@ We're colleagues working together. Be direct and honest:
 - Language features (e.g., that an ABC raises TypeError when instantiated)
 - Constructor assignments or trivial property access
 - Private methods (test them through public interfaces)
-- Type checking that pyright already validates
+- Type checking that mypy/pyright already validates
 - Return type validation (`assert isinstance(result, SomeClass)`) - the type signature already declares this
 - "Sanity check" or "smoke test" style tests that just verify a function runs - test actual behavior instead
 
 **Before writing a test, ask:** "If this broke in production, would anyone notice or care?" If the answer is no, skip the test.
+
+## Type Annotations
+
+    Complete typing - All functions/methods must have full type annotations
+    Strict pyright - Code must pass pyright in strict mode
+    Return types - All methods must specify return types
+    Object parameter - Use other: object for __eq__ methods
 
 ## Architecture
 
@@ -105,6 +110,8 @@ coverage html
 
 - **pytest** (>=7.0.0) - Testing framework
 - **coverage** - Code coverage measurement
+- **pyright** - fast type checks
+- **PyHamcrest** - shorter, more informative tests
 
 ## Static Analysis
 
@@ -114,7 +121,7 @@ coverage html
 
 ## Testing Style
 
-- **pyhamcrest** - Matcher library for expressive assertions
+- **PyHamcrest** - Matcher library for expressive assertions
   - Prefer `assert_that(result, has_length(3))` over `assert len(result) == 3`
   - Common matchers: `equal_to`, `contains_string`, `has_item`, `has_length`, `empty`, `is_not`
   - Plain `assert` is fine for simple equality: `assert result == expected`
