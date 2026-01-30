@@ -2,7 +2,12 @@
 
 Commands, Skills and other tools for augmenting Python development with Claude Code.
 
-I use it in conjunction with a project that creates projects. I plan to make that public Real Soon Now(tm).
+It's opinionated. I follow much of the process described in [GOOS](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627), but I have adapted the ideas for use with Python.
+
+
+This is under rapid development, but I hope you'll find it useful as it is now.
+
+I use it in conjunction with a meta-project that creates new projects. I plan to make that public Real Soon Now(tm).
 
 ## Installation
 
@@ -13,6 +18,8 @@ git clone https://github.com/romilly/claude-code-helpers.git
 ```
 
 ### 2. Copy the global CLAUDE.md
+
+**Or merge it** with your existing version.
 
 ```bash
 cp claude-code-helpers/resources/root-CLAUDE.md ~/.claude/CLAUDE.md
@@ -31,3 +38,6 @@ cp -r claude-code-helpers/resources/commands ~/.claude/commands
   - `matchers.md` - PyHamcrest custom matchers guide
   - `builders.md` - Test data builders guide
   - `refactoring.md` - Python refactoring patterns
+
+You'll more information about how I develop with Claude, other useful projects, and what *not* to do with GenAI, on [My Ghost Site](https://the-python-programmers-path-to-software-engineering.ghost.io)
+
