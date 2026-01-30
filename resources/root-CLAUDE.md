@@ -65,6 +65,10 @@ We're colleagues working together. Be direct and honest:
 
 **Before writing a test, ask:** "If this broke in production, would anyone notice or care?" If the answer is no, skip the test.
 
+## Architecture
+
+When planning or architecting a project, use /hexagonal
+
 ## Project Commands
 
 **Always activate the project's virtual environment before running tests or using project code:**

@@ -4,6 +4,7 @@ Commands, Skills and other tools for augmenting Python development with Claude C
 
 It's opinionated. I follow much of the process described in [GOOS](https://www.amazon.co.uk/Growing-Object-Oriented-Software-Guided-Signature/dp/0321503627), but I have adapted the ideas for use with Python.
 
+I use TDD, Ports and adapters, and Alistair Cockburn's use cases.
 
 This is under rapid development, but I hope you'll find it useful as it is now.
 
@@ -35,6 +36,7 @@ cp -r claude-code-helpers/resources/commands ~/.claude/commands
 
 - `resources/root-CLAUDE.md` - Global Claude Code configuration with TDD practices
 - `resources/commands/` - Slash commands:
+  - `hexagonal.md` - Hexagonal architecture and walking skeleton guide
   - `matchers.md` - PyHamcrest custom matchers guide
   - `builders.md` - Test data builders guide
   - `refactoring.md` - Python refactoring patterns
