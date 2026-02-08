@@ -41,6 +41,7 @@ cp -r claude-code-helpers/resources/commands ~/.claude/commands
   - `matchers.md` - PyHamcrest custom matchers guide
   - `builders.md` - Test data builders guide
   - `refactoring.md` - Python refactoring patterns
+  - `fastapi-app.md` - FastAPI web application guide (hexagonal architecture, htmx, Playwright E2E testing)
 
 You'll more information about how I develop with Claude, other useful projects, and what *not* to do with GenAI, on [My Ghost Site](https://the-python-programmers-path-to-software-engineering.ghost.io)
 
